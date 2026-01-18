@@ -10,7 +10,7 @@
     <meta property="og:title" content="Design & Decor | False Ceiling Expert">
     <meta property="og:description" content="Premium false ceiling & gypsum work in Karnal, Delhi NCR. Free site visit & quote.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://designanddecor.in">
+    <meta property="og:url" content="https://karnallocal.in">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
@@ -697,6 +697,9 @@
             
             <div class="border-t border-gray-800 pt-8 text-sm text-center">
                 <p>&copy; 2026 Design & Decor. All rights reserved.</p>
+                <p class="mt-2 text-xs text-gray-500">
+                    Total Visitors: <span id="visitor-count" class="font-semibold text-gray-400">0</span>
+                </p>
             </div>
         </div>
     </footer>
@@ -810,6 +813,18 @@ Room size: ${roomSize}`;
                 mobileMenu.classList.add('hidden');
             });
         });
+    </script>
+
+    <!-- Visitor Counter -->
+    <script src="js/visitor-counter.js"></script>
+    <script>
+        // Initialize visitor counter
+        const counter = new VisitorCounter({
+            useLocalStorage: true,
+            counterElementId: 'visitor-count',
+            debug: false // Set to true for debugging
+        });
+        counter.init();
     </script>
 
 </body>

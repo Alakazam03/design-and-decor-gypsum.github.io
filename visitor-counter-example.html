@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Counter Example</title>
+    <style>
+        .visitor-counter {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .visitor-counter h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        .visitor-counter .count {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .visitor-counter .label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Design & Decor Website</h1>
+    
+    <!-- Visitor Counter Display -->
+    <div class="visitor-counter">
+        <h3>Total Visitors</h3>
+        <div class="count" id="visitor-count">0</div>
+        <div class="label">Thank you for visiting!</div>
+    </div>
+
+    <!-- Option 1: Simple localStorage-based counter (no backend needed) -->
+    <script src="js/visitor-counter.js"></script>
+    <script>
+        // Simple configuration - uses localStorage only
+        window.visitorCounterConfig = {
+            useLocalStorage: true,
+            counterElementId: 'visitor-count',
+            debug: true // Set to false in production
+        };
+        
+        const counter = new VisitorCounter(window.visitorCounterConfig);
+        counter.init();
+    </script>
+
+    <!-- 
+    Option 2: With backend API (uncomment to use)
+    
+    <script>
+        window.visitorCounterConfig = {
+            apiEndpoint: '/api/visitors', // Your backend endpoint
+            counterElementId: 'visitor-count',
+            useLocalStorage: true, // Fallback to localStorage if API fails
+            debug: true
+        };
+        
+        const counter = new VisitorCounter(window.visitorCounterConfig);
+        counter.init();
+    </script>
+    -->
+</body>
+</html>
