@@ -1,10 +1,25 @@
 # High-Level Design (HLD) Document
 ## Design & Decor - False Ceiling & Gypsum Work Website
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Last Updated:** January 2026  
-**Domain:** https://designanddecor.in  
 **Status:** Active Development
+
+---
+
+## Domain Configuration
+
+**Current Domain:** `https://karnallocal.in`
+
+> **⚠️ IMPORTANT:** To update the domain across the entire document, search and replace:
+> - Find: `karnallocal.in`
+> - Replace with: `your-new-domain.com`
+> 
+> This will update all references including:
+> - Domain in this section
+> - Sitemap URLs
+> - Example URLs in documentation
+> - Schema markup examples
 
 ---
 
@@ -359,6 +374,7 @@ sequenceDiagram
     blog-post.html-->>User: Display full article
 ```
 
+
 #### Current Blog Post Status
 
 **Implemented:**
@@ -458,7 +474,7 @@ sequenceDiagram
 Add new URL entry:
 ```xml
 <url>
-    <loc>https://designanddecor.in/blog/{slug}.html</loc>
+    <loc>https://karnallocal.in/blog/{slug}.html</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -519,6 +535,7 @@ Add new URL entry:
 
 **Current Implementation:**
 Portfolio items are hardcoded in `index.html` under the Portfolio section.
+
 
 **Steps to Update:**
 
@@ -583,6 +600,36 @@ graph LR
     style A fill:#4caf50
     style C fill:#2196f3
 ```
+
+### Search Engine Crawling Flow
+
+```mermaid
+sequenceDiagram
+    participant SearchEngine
+    participant robots.txt
+    participant Website
+    participant sitemap.xml
+    participant HTML Pages
+    participant Schema Markup
+    
+    SearchEngine->>robots.txt: Check crawling rules
+    robots.txt-->>SearchEngine: Allow crawling
+    
+    SearchEngine->>sitemap.xml: Fetch sitemap
+    sitemap.xml-->>SearchEngine: Return URL list
+    
+    loop For each URL
+        SearchEngine->>HTML Pages: Request page
+        HTML Pages-->>SearchEngine: Return HTML content
+        SearchEngine->>Schema Markup: Extract structured data
+        Schema Markup-->>SearchEngine: Return JSON-LD data
+        SearchEngine->>SearchEngine: Index page content
+    end
+    
+    SearchEngine->>SearchEngine: Update search index
+    SearchEngine-->>Website: Page appears in search results
+```
+
 
 ### Monthly SEO Tasks
 
@@ -718,6 +765,32 @@ graph TD
 - Room size selection (100-200, 200-300, 300-500, 500+ sq.ft)
 - Pre-formatted message sent to WhatsApp with all details
 
+**WhatsApp Form Modal Flow:**
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Page
+    participant Modal
+    participant WhatsApp
+    
+    User->>Page: Click WhatsApp CTA button
+    Page->>Modal: Open form modal
+    Modal-->>User: Display form fields
+    
+    User->>Modal: Select location
+    User->>Modal: Select property type
+    User->>Modal: Select room size
+    User->>Modal: Click Submit
+    
+    Modal->>Modal: Format message with details
+    Modal->>WhatsApp: Open WhatsApp with pre-filled message
+    WhatsApp-->>User: WhatsApp chat opens
+    User->>WhatsApp: Send message
+    WhatsApp-->>User: Message sent to business
+```
+
+
 **Optimization Tips:**
 - Use different message templates for different pages
 - A/B test message copy
@@ -744,6 +817,27 @@ graph TD
 **Current:** 
 - Contact form in `index.html` footer section (Formspree integration - needs form ID update)
 - WhatsApp form modal (fully functional, sends to WhatsApp directly)
+
+**Contact Form Submission Flow:**
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Form
+    participant Formspree
+    participant Email
+    participant Business
+    
+    User->>Form: Fill form fields
+    User->>Form: Click Submit
+    Form->>Form: Validate inputs
+    Form->>Formspree: POST form data
+    Formspree->>Email: Send notification email
+    Formspree->>Form: Return success response
+    Form-->>User: Show success message
+    Email-->>Business: New lead notification
+    Business->>User: Follow-up call/WhatsApp
+```
 
 **Best Practices:**
 - Keep form fields minimal (name, phone, service)
@@ -828,7 +922,7 @@ graph TD
 5. **Update Sitemap:**
    ```xml
    <url>
-       <loc>https://designanddecor.in/new-service-karnal.html</loc>
+       <loc>https://karnallocal.in/new-service-karnal.html</loc>
        <lastmod>2026-01-20</lastmod>
        <changefreq>monthly</changefreq>
        <priority>0.8</priority>
@@ -881,6 +975,35 @@ graph TD
 
 #### 4. Adding Image Gallery Filter
 
+**Image Gallery Lightbox Flow:**
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant designs.html
+    participant Lightbox
+    participant ImageCDN
+    
+    User->>designs.html: Visit /designs.html
+    designs.html->>ImageCDN: Load thumbnail images
+    ImageCDN-->>designs.html: Display gallery grid
+    
+    User->>designs.html: Click on image
+    designs.html->>Lightbox: Open lightbox
+    Lightbox->>ImageCDN: Load full-size image
+    ImageCDN-->>Lightbox: Display full image
+    Lightbox-->>User: Show enlarged image
+    
+    User->>Lightbox: Click next/prev arrow
+    Lightbox->>ImageCDN: Load next image
+    ImageCDN-->>Lightbox: Display next image
+    
+    User->>Lightbox: Click close or ESC
+    Lightbox->>designs.html: Close lightbox
+    designs.html-->>User: Return to gallery
+```
+
+
 **Enhancement to designs.html:**
 
 1. **Add Filter Buttons:**
@@ -931,6 +1054,36 @@ graph TD
 
 #### 6. Adding Analytics
 
+**Analytics Event Tracking Flow:**
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Page
+    participant GA4
+    participant Analytics Dashboard
+    
+    User->>Page: Perform action (click, view, etc.)
+    Page->>Page: Detect event
+    Page->>GA4: Send event data
+    GA4->>Analytics Dashboard: Store event
+    
+    Note over User,GA4: Event Types
+    User->>Page: Click WhatsApp button
+    Page->>GA4: whatsapp_click event
+    
+    User->>Page: Submit contact form
+    Page->>GA4: form_submit event
+    
+    User->>Page: View blog post
+    Page->>GA4: blog_view event
+    
+    User->>Page: Filter portfolio
+    Page->>GA4: portfolio_filter event
+    
+    Analytics Dashboard-->>Page: Display insights
+```
+
 **Google Analytics 4:**
 
 1. **Add to all HTML files (before </head>):**
@@ -958,6 +1111,37 @@ graph TD
    ```
 
 #### 7. Adding Live Chat Widget
+
+**Live Chat Widget Flow:**
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Page
+    participant ChatWidget
+    participant ChatService
+    participant Business
+    
+    User->>Page: Visit website
+    Page->>ChatWidget: Load chat widget
+    ChatWidget-->>User: Show chat icon
+    
+    User->>ChatWidget: Click chat icon
+    ChatWidget-->>User: Open chat window
+    
+    User->>ChatWidget: Type message
+    ChatWidget->>ChatService: Send message
+    ChatService->>Business: Notify new message
+    
+    Business->>ChatService: Respond to user
+    ChatService->>ChatWidget: Deliver message
+    ChatWidget-->>User: Show response
+    
+    alt Business offline
+        ChatService->>ChatWidget: Show offline message
+        ChatWidget-->>User: Display offline form
+    end
+```
 
 **Options:**
 - Tawk.to (free)
@@ -1034,7 +1218,7 @@ graph TB
 ### Hosting Recommendations
 - **Static Hosting**: Netlify, Vercel, GitHub Pages
 - **CDN**: Cloudflare (for better performance)
-- **Domain**: Already configured (designanddecor.in)
+- **Domain**: karnallocal.in (see Domain Configuration section above)
 
 ---
 
@@ -1267,6 +1451,13 @@ For questions or updates to this document, please refer to the codebase or conta
 
 ## Change Log
 
+### Version 1.2 (January 2026)
+- ✅ Optimized sequence diagrams (removed redundant ones)
+- ✅ Added Domain Configuration section for easy domain updates
+- ✅ Updated domain from designanddecor.in to karnallocal.in
+- ✅ Updated sitemap.xml with all existing pages
+- ✅ Streamlined documentation for better maintainability
+
 ### Version 1.1 (January 2026)
 - ✅ Updated file structure with current implementation status
 - ✅ Added route status indicators (✅ Implemented, ⚠️ Partial, ❌ Missing)
@@ -1276,6 +1467,7 @@ For questions or updates to this document, please refer to the codebase or conta
 - ✅ Updated location pages status (3 of 6 exist)
 - ✅ Documented sitemap.xml gaps
 - ✅ Added completed features checklist
+- ✅ Added comprehensive Mermaid sequence diagrams
 
 ### Version 1.0 (January 2026)
 - Initial HLD document creation
