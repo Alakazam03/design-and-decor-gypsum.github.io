@@ -81,4 +81,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    
+    <!-- Location-Specific Service Pages -->
+    <url>
+        <loc>https://karnallocal.in/false-ceiling-kurukshetra.html</loc>
+        <lastmod>2026-01-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

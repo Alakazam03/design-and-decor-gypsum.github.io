@@ -1,5 +1,5 @@
 # Design & Decor - Robots.txt
-# https://designanddecor.in
+# https://karnallocal.in
 
 User-agent: *
 Allow: /
@@ -33,7 +33,7 @@ User-agent: cohere-ai
 Allow: /
 
 # Sitemap
-Sitemap: https://designanddecor.in/sitemap.xml
+Sitemap: https://karnallocal.in/sitemap.xml
 
 # LLM-specific content
 # See llms.txt for AI-friendly content summary
