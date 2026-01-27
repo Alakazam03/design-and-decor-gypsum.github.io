@@ -6,3 +6,19 @@ RewriteRule ^(.*)$ https://karnallocal.in/$1 [R=301,L]
 # Force HTTPS (optional but recommended)
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Remove .html extension from URLs (internal rewrite for cleaner URLs)
+# This allows URLs like /false-ceiling-ambala to work and serve /false-ceiling-ambala.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Handle directory redirects (ensure trailing slash consistency)
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*[^/])$ $1/ [R=301,L]
+
+# Redirect location subdirectories to proper paths
+RewriteRule ^ambala/?$ /ambala/index.html [L]
+RewriteRule ^assandh/?$ /assandh/index.html [L]
+RewriteRule ^panipat/?$ /panipat/index.html [L]
+RewriteRule ^kurukshetra/?$ /kurukshetra/index.html [L]
