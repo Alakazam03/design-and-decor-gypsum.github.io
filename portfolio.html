@@ -148,7 +148,7 @@
                         <img src="images/modern-gypsum-false-ceiling-project-living-room-karnal.jpg" 
                              alt="Living room false ceiling project in Karnal" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -166,7 +166,7 @@
                         <img src="images/acoustic-grid-false-ceiling-project-office-delhi.jpg" 
                              alt="Office false ceiling project in Delhi" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -184,7 +184,7 @@
                         <img src="images/luxury-multi-layer-false-ceiling-master-bedroom-gurgaon.jpg" 
                              alt="Bedroom ceiling project in Gurgaon" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -202,7 +202,7 @@
                         <img src="images/cove-lighting-gypsum-false-ceiling-living-room-concealed-led-karnal.jpg" 
                              alt="Conference room ceiling in Noida" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -220,7 +220,7 @@
                         <img src="images/moisture-resistant-gypsum-kitchen-ceiling-karnal.jpg" 
                              alt="Kitchen ceiling project in Karnal" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -238,7 +238,7 @@
                         <img src="images/professional-grid-office-ceiling-integrated-led-panels-karnal.jpg" 
                              alt="Office partition project in Gurgaon" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -256,7 +256,7 @@
                         <img src="images/cove-lighting-gypsum-false-ceiling-living-room-concealed-led-karnal.jpg" 
                              alt="POP ceiling project in Delhi" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -274,7 +274,7 @@
                         <img src="images/modern-gypsum-false-ceiling-living-room-led-lighting-karnal.jpg" 
                              alt="Wall paneling project in Noida" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -292,7 +292,7 @@
                         <img src="images/professional-grid-office-ceiling-integrated-led-panels-karnal.jpg" 
                              alt="Shop ceiling project in Faridabad" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80';">
                     </div>
                     <div class="p-4">
                         <div class="flex items-center gap-2 mb-2">
@@ -500,5 +500,63 @@ Room size: ${roomSize}`;
         });
     </script>
 
+    <!-- Image Fallback Handler -->
+    <script>
+        // Handle image fallbacks for missing local images
+        // This works even when browsers cache 404 responses
+        (function() {
+            const imageFallbacks = {
+                'close-up-modern-gypsum-false-ceiling-led-strip-lights-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80&fit=crop',
+                'living-room-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'bedroom-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
+                'office-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
+                'modern-gypsum-false-ceiling-project-living-room-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'office-false-ceiling.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80',
+                'bedroom-ceiling-design.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80',
+                'false-ceiling-project-assandh.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'false-ceiling-project-panipat.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'false-ceiling-project-kurukshetra.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'modern-gypsum-false-ceiling-living-room-led-lighting-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'minimal-gypsum-bedroom-ceiling-peripheral-led-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
+                'professional-grid-office-ceiling-integrated-led-panels-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
+                'coffered-gypsum-false-ceiling-living-room-led-integration-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'floating-gypsum-bedroom-ceiling-concealed-led-strips-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
+                'moisture-resistant-gypsum-kitchen-ceiling-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'plus-minus-pattern-gypsum-false-ceiling-living-room-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'acoustic-false-ceiling-conference-room-led-panels-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
+                'custom-themed-gypsum-false-ceiling-kids-room-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'cove-lighting-gypsum-false-ceiling-living-room-concealed-led-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'luxury-multi-layer-gypsum-master-bedroom-chandelier-point-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'modern-open-office-false-ceiling-industrial-aesthetic-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
+                'acoustic-grid-false-ceiling-project-office-delhi.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80',
+                'luxury-multi-layer-false-ceiling-master-bedroom-gurgaon.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80'
+            };
+            
+            function getFallbackUrl(imgSrc) {
+                const filename = imgSrc.split('/').pop();
+                return imageFallbacks[filename] || 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';
+            }
+            
+            // Check all images and add fallback handlers
+            document.querySelectorAll('img[src*="images/"]').forEach(img => {
+                const originalSrc = img.src;
+                const fallbackUrl = getFallbackUrl(originalSrc);
+                
+                // Enhanced onerror handler
+                img.onerror = function() {
+                    if (this.src !== fallbackUrl) {
+                        this.src = fallbackUrl;
+                    }
+                };
+                
+                // Also check if image loaded successfully after a short delay
+                setTimeout(() => {
+                    if (!img.complete || img.naturalHeight === 0) {
+                        img.src = fallbackUrl;
+                    }
+                }, 100);
+            });
+        })();
+    </script>
 </body>
 </html>

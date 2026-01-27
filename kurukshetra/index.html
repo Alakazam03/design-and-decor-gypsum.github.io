@@ -274,7 +274,7 @@
                 <!-- Hero Image -->
                 <div class="relative">
                     <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-bg-light card-shadow">
-                        <img src="../images/close-up-modern-gypsum-false-ceiling-led-strip-lights-karnal.jpg" 
+                        <img src="../images/close-up-modern-gypsum-false-ceiling-led-strip-lights-karnal.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800src="../images/close-up-modern-gypsum-false-ceiling-led-strip-lights-karnal.jpg"q=80src="../images/close-up-modern-gypsum-false-ceiling-led-strip-lights-karnal.jpg"fit=crop';" 
                              alt="Close-up modern gypsum false ceiling with LED strip lights - professional ceiling design" 
                              class="w-full h-full object-cover"
                              loading="eager">
@@ -361,7 +361,7 @@
             <!-- Design Grid -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <a href="../designs.html" class="group relative aspect-square rounded-xl overflow-hidden bg-bg-light">
-                    <img src="../images/living-room-false-ceiling-design.jpg" 
+                    <img src="../images/living-room-false-ceiling-design.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400src="../images/living-room-false-ceiling-design.jpg"q=80';" 
                          alt="Living room false ceiling design" 
                          class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                          loading="lazy">
@@ -373,7 +373,7 @@
                 </a>
                 
                 <a href="../designs.html" class="group relative aspect-square rounded-xl overflow-hidden bg-bg-light">
-                    <img src="../images/bedroom-false-ceiling-design.jpg" 
+                    <img src="../images/bedroom-false-ceiling-design.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400src="../images/bedroom-false-ceiling-design.jpg"q=80';" 
                          alt="Bedroom false ceiling design" 
                          class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                          loading="lazy">
@@ -385,7 +385,7 @@
                 </a>
                 
                 <a href="../designs.html" class="group relative aspect-square rounded-xl overflow-hidden bg-bg-light">
-                    <img src="../images/office-false-ceiling-design.jpg" 
+                    <img src="../images/office-false-ceiling-design.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400src="../images/office-false-ceiling-design.jpg"q=80';" 
                          alt="Office false ceiling design" 
                          class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                          loading="lazy">
@@ -507,7 +507,8 @@
                         <img src="../images/false-ceiling-project-kurukshetra.jpg" 
                              alt="False ceiling project in Kurukshetra" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             loading="lazy">
+                             loading="lazy"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80';">
                     </div>
                     <div class="p-4">
                         <h3 class="font-semibold text-primary-dark">Living Room Ceiling</h3>
@@ -517,7 +518,7 @@
                 
                 <div class="group bg-white rounded-2xl overflow-hidden card-shadow hover:shadow-xl transition">
                     <div class="aspect-[4/3] overflow-hidden">
-                        <img src="../images/office-false-ceiling.jpg" 
+                        <img src="../images/office-false-ceiling.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600src="../images/office-false-ceiling.jpg"q=80';" 
                              alt="Office false ceiling" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                              loading="lazy">
@@ -530,7 +531,7 @@
                 
                 <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
                     <div class="aspect-[4/3] overflow-hidden">
-                        <img src="../images/bedroom-ceiling-design.jpg" 
+                        <img src="../images/bedroom-ceiling-design.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600src="../images/bedroom-ceiling-design.jpg"q=80';" 
                              alt="Bedroom ceiling design" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                              loading="lazy">
@@ -888,5 +889,63 @@ Room size: ${roomSize}`;
         counter.init();
     </script>
 
+    <!-- Image Fallback Handler -->
+    <script>
+        // Handle image fallbacks for missing local images
+        // This works even when browsers cache 404 responses
+        (function() {
+            const imageFallbacks = {
+                'close-up-modern-gypsum-false-ceiling-led-strip-lights-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80&fit=crop',
+                'living-room-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'bedroom-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
+                'office-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
+                'modern-gypsum-false-ceiling-project-living-room-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'office-false-ceiling.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80',
+                'bedroom-ceiling-design.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80',
+                'false-ceiling-project-assandh.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'false-ceiling-project-panipat.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'false-ceiling-project-kurukshetra.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'modern-gypsum-false-ceiling-living-room-led-lighting-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'minimal-gypsum-bedroom-ceiling-peripheral-led-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
+                'professional-grid-office-ceiling-integrated-led-panels-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
+                'coffered-gypsum-false-ceiling-living-room-led-integration-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'floating-gypsum-bedroom-ceiling-concealed-led-strips-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
+                'moisture-resistant-gypsum-kitchen-ceiling-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'plus-minus-pattern-gypsum-false-ceiling-living-room-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'acoustic-false-ceiling-conference-room-led-panels-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
+                'custom-themed-gypsum-false-ceiling-kids-room-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'cove-lighting-gypsum-false-ceiling-living-room-concealed-led-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'luxury-multi-layer-gypsum-master-bedroom-chandelier-point-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
+                'modern-open-office-false-ceiling-industrial-aesthetic-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
+                'acoustic-grid-false-ceiling-project-office-delhi.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80',
+                'luxury-multi-layer-false-ceiling-master-bedroom-gurgaon.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80'
+            };
+            
+            function getFallbackUrl(imgSrc) {
+                const filename = imgSrc.split('/').pop();
+                return imageFallbacks[filename] || 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';
+            }
+            
+            // Check all images and add fallback handlers
+            document.querySelectorAll('img[src*="images/"]').forEach(img => {
+                const originalSrc = img.src;
+                const fallbackUrl = getFallbackUrl(originalSrc);
+                
+                // Enhanced onerror handler
+                img.onerror = function() {
+                    if (this.src !== fallbackUrl) {
+                        this.src = fallbackUrl;
+                    }
+                };
+                
+                // Also check if image loaded successfully after a short delay
+                setTimeout(() => {
+                    if (!img.complete || img.naturalHeight === 0) {
+                        img.src = fallbackUrl;
+                    }
+                }, 100);
+            });
+        })();
+    </script>
 </body>
 </html>
