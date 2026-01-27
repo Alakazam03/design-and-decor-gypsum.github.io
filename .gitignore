@@ -1,0 +1,50 @@
+# Documentation files (not needed for GitHub Pages hosting)
+# Keep README.md as GitHub displays it
+BLOG_TEMPLATE.md
+DOMAIN_VERIFICATION_REPORT.md
+GOOGLE_SEARCH_CONSOLE_SETUP.md
+HLD.md
+IMAGE_OPTIMIZATION_CHECKLIST.md
+INTEGRATION_EXAMPLE.md
+NAMECHEAP_DNS_SETUP.md
+VISITOR_COUNTER_README.md
+
+# Backend/Server files (GitHub Pages is static hosting only)
+backend-visitor-counter.js
+package.json
+package-lock.json
+visitor-data.json
+
+# Node.js dependencies (if any)
+node_modules/
+
+# Example/Template files (not actual pages)
+visitor-counter-example.html
+templates/
+
+# Developer files
+llms.txt
+
+# Server configuration (GitHub Pages doesn't use Apache)
+.htaccess
+
+# OS and Editor files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.log
+*.cache
