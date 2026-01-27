@@ -1,0 +1,8 @@
+# Canonicalization: Redirect www to non-www (301 Permanent Redirect)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.karnallocal\.in$ [NC]
+RewriteRule ^(.*)$ https://karnallocal.in/$1 [R=301,L]
+
+# Force HTTPS (optional but recommended)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
