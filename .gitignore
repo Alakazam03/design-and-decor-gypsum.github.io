@@ -24,6 +24,7 @@ templates/
 
 # Developer files
 llms.txt
+image-filename-mapping.json
 
 # Server configuration (GitHub Pages doesn't use Apache)
 .htaccess
