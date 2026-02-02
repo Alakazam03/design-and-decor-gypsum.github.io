@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100+ False Ceiling Designs 2026 | Living Room, Bedroom, Office | Design & Decor</title>
-    <meta name="description" content="Browse 100+ modern false ceiling designs for living room, bedroom, kitchen & office. Get inspired and contact us for installation in Karnal & Delhi NCR.">
+    
+    <!-- SEO-Optimized Title targeting "false ceiling designs 2026" -->
+    <title>Modern False Ceiling Designs 2026 | Living Room, Bedroom & Luxury Ideas | Karnal</title>
+    <meta name="description" content="Browse 100+ modern false ceiling designs for 2026. Simple living room, bedroom & luxury ceiling ideas with prices starting ₹70/sq.ft. Free consultation on WhatsApp. Trusted family business in Karnal.">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://karnallocal.in/designs.html">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="100+ False Ceiling Designs | Design & Decor">
-    <meta property="og:description" content="Modern false ceiling design ideas for your home. Living room, bedroom, office designs with LED lighting.">
+    <meta property="og:title" content="Modern False Ceiling Designs 2026 | Ideas & Prices | Karnal">
+    <meta property="og:description" content="100+ false ceiling design ideas for living room, bedroom & office. Get free design consultation on WhatsApp. Family business with 10+ years experience.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://karnallocal.in/designs.html">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
     
-    <!-- Fonts -->
+    <!-- Fonts - Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -34,6 +37,8 @@
                     colors: {
                         'whatsapp': '#25D366',
                         'whatsapp-dark': '#128C7E',
+                        'cream': '#FFFBF5',
+                        'warm-gray': '#F5F3F0',
                     }
                 }
             }
@@ -48,26 +53,121 @@
         /* Lightbox */
         .lightbox { display: none; }
         .lightbox.active { display: flex; }
+        
+        /* Floating WhatsApp pulse animation */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(1.3); opacity: 0; }
+        }
+        .pulse-ring::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: #25D366;
+            animation: pulse-ring 1.5s ease-out infinite;
+            z-index: -1;
+        }
+
+        /* Design card hover effect */
+        .design-card:hover .card-cta {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .card-cta {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        /* Mobile horizontal swipe for gallery */
+        @media (max-width: 767px) {
+            .gallery-scroll {
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+            }
+            .gallery-scroll .design-card {
+                scroll-snap-align: center;
+            }
+        }
     </style>
 
-    <!-- Schema Markup for Image Gallery -->
+    <!-- Enhanced Schema Markup: LocalBusiness + ImageGallery + FAQPage -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ImageGallery",
-        "name": "False Ceiling Designs",
-        "description": "Collection of modern false ceiling designs for homes and offices",
-        "url": "https://karnallocal.in/designs.html",
-        "author": {
-            "@type": "LocalBusiness",
-            "name": "Design & Decor"
-        }
+        "@graph": [
+            {
+                "@type": "LocalBusiness",
+                "name": "Design & Decor - False Ceiling Karnal",
+                "description": "Family-run false ceiling and gypsum work business serving Karnal & NCR since 2014. Modern designs, transparent pricing, free consultation.",
+                "url": "https://karnallocal.in",
+                "telephone": "+91-9355510817",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Karnal",
+                    "addressRegion": "Haryana",
+                    "postalCode": "132001",
+                    "addressCountry": "IN"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "29.6857",
+                    "longitude": "76.9905"
+                },
+                "priceRange": "₹70-₹160/sq.ft",
+                "openingHours": "Mo-Sa 09:00-19:00",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "150"
+                },
+                "areaServed": ["Karnal", "Panipat", "Kurukshetra", "Ambala", "Delhi NCR"]
+            },
+            {
+                "@type": "ImageGallery",
+                "name": "Modern False Ceiling Designs 2026",
+                "description": "Collection of 100+ modern false ceiling designs for living room, bedroom, office with prices",
+                "url": "https://karnallocal.in/designs.html",
+                "about": {
+                    "@type": "Service",
+                    "name": "False Ceiling Installation",
+                    "provider": {
+                        "@type": "LocalBusiness",
+                        "name": "Design & Decor"
+                    }
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is the cost of false ceiling in Karnal?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "False ceiling costs in Karnal range from ₹70-₹160 per sq.ft depending on design complexity. Basic gypsum starts at ₹75/sq.ft, while luxury multi-layer designs with LED can go up to ₹160/sq.ft. We offer free site visits and transparent quotes."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which false ceiling design is best for living room?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "For living rooms, tray ceilings with cove lighting, coffered designs, and floating ceilings are most popular in 2026. These designs add elegance while providing excellent ambient lighting. Prices typically range from ₹85-₹120/sq.ft."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>
 <body class="font-sans text-gray-900 bg-white">
 
-    <!-- Header -->
+    <!-- ============================================
+         HEADER - Compact with WhatsApp CTA
+         ============================================ -->
     <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
             <a href="/" class="flex items-center gap-2">
@@ -76,21 +176,22 @@
                 </div>
                 <div class="hidden sm:block">
                     <div class="font-semibold text-gray-900 leading-tight">Design & Decor</div>
-                    <div class="text-xs text-gray-500">False Ceiling Expert</div>
+                    <div class="text-xs text-gray-500">Family Business • Since 2014</div>
                 </div>
             </a>
             
             <nav class="hidden md:flex items-center gap-8">
                 <a href="index.html#services" class="text-sm text-gray-600 hover:text-gray-900 transition">Services</a>
                 <a href="designs.html" class="text-sm text-gray-900 font-medium">Designs</a>
-                <a href="index.html#portfolio" class="text-sm text-gray-600 hover:text-gray-900 transition">Portfolio</a>
+                <a href="index.html#portfolio" class="text-sm text-gray-600 hover:text-gray-900 transition">Our Work</a>
                 <a href="index.html#contact" class="text-sm text-gray-600 hover:text-gray-900 transition">Contact</a>
             </nav>
             
-            <a href="https://wa.me/919355510817?text=Hi%2C%20I%20saw%20designs%20on%20your%20website.%20Please%20share%20details." 
+            <!-- Header CTA - Desktop -->
+            <a href="https://wa.me/919355510817?text=Hi%2C%20I%20saw%20your%20false%20ceiling%20designs%20online.%0AI%20want%20a%20free%20consultation%20for%20my%20home%20in%20Karnal." 
                class="hidden sm:flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white px-4 py-2 rounded-full text-sm font-medium transition">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Get Quote
+                Free Consultation
             </a>
             
             <button id="menuBtn" class="md:hidden p-2 -mr-2">
@@ -101,107 +202,86 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="pt-24 pb-8 bg-gradient-to-b from-gray-50 to-white">
+    <!-- ============================================
+         HERO SECTION - SEO H1 + Trust Badges + CTA
+         ============================================ -->
+    <section class="pt-24 pb-10 bg-gradient-to-b from-cream to-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto">
-                <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-                    False Ceiling Designs
+                
+                <!-- SEO-Optimized H1 -->
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Modern False Ceiling Designs in Karnal
+                    <span class="block text-2xl md:text-3xl text-gray-600 font-medium mt-2">(2026 Ideas & Prices)</span>
                 </h1>
+                
+                <!-- Trust Subheading -->
                 <p class="text-lg text-gray-600 mb-6">
-                    Browse our collection of modern ceiling designs. Find inspiration for your living room, bedroom, office, and more.
+                    Browse 100+ ceiling designs for living room, bedroom & office. 
+                    <span class="text-whatsapp-dark font-medium">Free design consultation on WhatsApp</span> • No spam • Family business
                 </p>
-                <p class="text-sm text-gray-500">
-                    💡 Tap on any design to view details and get a quote
-                </p>
+                
+                <!-- Primary CTA with Trust Badges -->
+                <div class="flex flex-col items-center gap-4 mb-8">
+                    <a href="https://wa.me/919355510817?text=Hi%2C%20I%20saw%20your%20false%20ceiling%20designs%20online.%0AI%20want%20a%20free%20consultation%20for%20my%20home%20in%20Karnal." 
+                       class="inline-flex items-center gap-3 bg-whatsapp hover:bg-whatsapp-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition shadow-lg shadow-whatsapp/30 hover:shadow-xl hover:shadow-whatsapp/40">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Get Free Ceiling Design on WhatsApp
+                    </a>
+                    <p class="text-sm text-gray-500">Talk directly to the owner • Response within 1 hour</p>
+                </div>
+                
+                <!-- Trust Badges Row -->
+                <div class="flex flex-wrap justify-center gap-4 text-sm">
+                    <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        <span class="text-gray-700">10+ Years Local Experience</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        <span class="text-gray-700">Transparent Pricing</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        <span class="text-gray-700">Free On-Site Visit</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Elements Section -->
-    <section class="py-12 bg-white">
+    <!-- ============================================
+         QUICK STATS - Social Proof
+         ============================================ -->
+    <section class="py-8 bg-white border-y border-gray-100">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <!-- Rating Badge -->
-                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 text-center border border-yellow-200">
-                    <div class="flex items-center justify-center gap-1 mb-2">
-                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="flex items-center justify-center gap-1 mb-1">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <span class="text-2xl font-bold text-gray-900">4.9</span>
                     </div>
-                    <div class="text-3xl font-bold text-gray-900 mb-1">4.9</div>
-                    <div class="text-sm text-gray-600">Based on 150+ Reviews</div>
+                    <div class="text-sm text-gray-600">150+ Happy Families</div>
                 </div>
-
-                <!-- Experience Badge -->
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center border border-blue-200">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">10+</div>
-                    <div class="text-sm font-semibold text-gray-900 mb-1">Years Experience</div>
-                    <div class="text-xs text-gray-600">Serving since 2014</div>
+                <div>
+                    <div class="text-2xl font-bold text-gray-900">500+</div>
+                    <div class="text-sm text-gray-600">Projects Completed</div>
                 </div>
-
-                <!-- Projects Completed -->
-                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center border border-green-200">
-                    <div class="text-4xl font-bold text-green-600 mb-2">500+</div>
-                    <div class="text-sm font-semibold text-gray-900 mb-1">Projects Completed</div>
-                    <div class="text-xs text-gray-600">Across Karnal & NCR</div>
+                <div>
+                    <div class="text-2xl font-bold text-gray-900">10+</div>
+                    <div class="text-sm text-gray-600">Years in Karnal</div>
                 </div>
-
-                <!-- Free Consultation -->
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center border border-purple-200">
-                    <div class="text-2xl font-bold text-purple-600 mb-2">100%</div>
-                    <div class="text-sm font-semibold text-gray-900 mb-1">Free Site Visit</div>
-                    <div class="text-xs text-gray-600">No hidden charges</div>
-                </div>
-            </div>
-
-            <!-- Testimonials -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                    <div class="flex items-center gap-1 mb-3">
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    </div>
-                    <p class="text-gray-700 mb-4 text-sm leading-relaxed">"Excellent work! The team installed a beautiful gypsum ceiling in our living room. Professional, on-time, and the finish is perfect. Highly recommended for Karnal homes."</p>
-                    <div class="text-sm font-semibold text-gray-900">Ravi K.</div>
-                    <div class="text-xs text-gray-500">Sector 13, Karnal</div>
-                </div>
-
-                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                    <div class="flex items-center gap-1 mb-3">
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    </div>
-                    <p class="text-gray-700 mb-4 text-sm leading-relaxed">"Got a modern POP ceiling with LED lighting for our bedroom. The design consultation was free, and they understood exactly what we wanted. Quality work at reasonable prices."</p>
-                    <div class="text-sm font-semibold text-gray-900">Priya S.</div>
-                    <div class="text-xs text-gray-500">Model Town, Karnal</div>
-                </div>
-
-                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                    <div class="flex items-center gap-1 mb-3">
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    </div>
-                    <p class="text-gray-700 mb-4 text-sm leading-relaxed">"Professional team, clean work, and they completed our office ceiling installation on schedule. The acoustic panels work great for our conference room. Worth every rupee!"</p>
-                    <div class="text-sm font-semibold text-gray-900">Amit R.</div>
-                    <div class="text-xs text-gray-500">Sector 15, Karnal</div>
+                <div>
+                    <div class="text-2xl font-bold text-green-600">₹70</div>
+                    <div class="text-sm text-gray-600">Starting per sq.ft</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Filter Tabs -->
+    <!-- ============================================
+         FILTER TABS - Sticky Navigation
+         ============================================ -->
     <section class="sticky top-16 bg-white border-b border-gray-100 z-40">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex gap-2 py-4 overflow-x-auto hide-scrollbar">
@@ -217,529 +297,746 @@
                 <button data-filter="office" class="filter-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-200 transition">
                     Office
                 </button>
-                <button data-filter="kitchen" class="filter-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-200 transition">
-                    Kitchen
+                <button data-filter="luxury" class="filter-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-200 transition">
+                    Luxury
                 </button>
-                <button data-filter="led" class="filter-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-200 transition">
-                    With LED
+                <button data-filter="budget" class="filter-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium whitespace-nowrap hover:bg-gray-200 transition">
+                    Budget-Friendly
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Design Gallery -->
-    <section class="py-8 pb-24">
+    <!-- ============================================
+         SECTION 1: MODERN FALSE CEILING DESIGNS 2026
+         ============================================ -->
+    <section class="py-12 bg-white" id="modern-2026">
         <div class="max-w-6xl mx-auto px-4">
-            <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            
+            <!-- Section Header with SEO Content -->
+            <div class="max-w-3xl mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    Modern False Ceiling Designs 2026
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Looking for the latest false ceiling trends? In 2026, homeowners in Karnal are choosing <strong>minimalist designs with hidden LED lighting</strong>, floating ceilings, and geometric patterns. These modern designs create a premium look while keeping your home bright and spacious.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Whether you want a simple design for your living room or a statement ceiling for your bedroom, we can help you choose the perfect style within your budget. Our team has completed 500+ projects across Karnal, Panipat, and NCR.
+                </p>
+            </div>
+            
+            <!-- Design Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 
-                <!-- Design 1 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer" 
-                     data-category="living led"
-                     data-title="Modern Living Room Ceiling"
+                <!-- Design Card 1: Modern Living Room -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="living modern"
+                     data-title="Modern Tray Ceiling with LED"
                      data-desc="Elegant tray ceiling design with recessed LED lighting. Perfect for spacious living rooms."
-                     data-full-desc="This contemporary tray ceiling design features a multi-level gypsum board construction with integrated recessed LED lighting, creating a sophisticated and modern ambiance perfect for spacious living rooms in Karnal homes. The design utilizes premium gypsum boards from Saint-Gobain, known for their fire-resistant properties and smooth finish. The recessed LED lights are strategically placed to provide both ambient and task lighting, eliminating the need for traditional hanging fixtures. This style works exceptionally well in modern Indian homes, complementing contemporary furniture and decor. The tray design adds visual depth to the room while maintaining a clean, minimalist aesthetic. Perfect for homes in Sector 13, Sector 14, and other modern residential areas of Karnal, this design enhances the overall interior while providing excellent thermal insulation during hot summers."
-                     data-material="Gypsum"
-                     data-style="Contemporary Tray"
+                     data-full-desc="This contemporary tray ceiling design features a multi-level gypsum board construction with integrated recessed LED lighting, creating a sophisticated and modern ambiance. The recessed LED lights eliminate the need for traditional fixtures while providing both ambient and task lighting. Perfect for modern Indian homes in Karnal."
+                     data-material="Gypsum Board"
+                     data-style="Tray Ceiling"
                      data-room="Living Room"
-                     data-price="₹85-120/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/modern-gypsum-false-ceiling-living-room-led-lighting-karnal.jpg" 
-                         alt="Modern Gypsum False Ceiling Design for Living Room in Karnal with LED Lighting" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Modern Living Room</div>
-                            <div class="text-white/70 text-sm">With LED Lighting</div>
+                     data-price="₹85-120/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/Stunning_Modern_Living_Room_with_Luxurious_Stretch_Ceiling_and_LED_Lighting.png" 
+                             alt="Modern tray false ceiling design for living room with LED lighting - Karnal 2026" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        
+                        <!-- Room Type Badge -->
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Living Room
+                        </div>
+                        
+                        <!-- Price Badge -->
+                        <div class="absolute top-3 right-3 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹85-120/sq.ft
                         </div>
                     </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Living Room
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Modern Tray Ceiling with LED</h3>
+                        <p class="text-sm text-gray-600 mb-4">Multi-level design with hidden cove lighting</p>
+                        
+                        <!-- Card CTA -->
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20Modern%20Tray%20Ceiling%20design.%20Please%20share%20the%20price%20for%20my%20living%20room." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
                     </div>
                 </div>
 
-                <!-- Design 2 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="bedroom"
-                     data-title="Minimal Bedroom Ceiling"
-                     data-desc="Clean minimal design with peripheral lighting. Creates a calm, serene bedroom atmosphere."
-                     data-full-desc="This minimalist bedroom ceiling design emphasizes simplicity and tranquility, featuring a clean gypsum board finish with subtle peripheral cove lighting that creates a soft, ambient glow around the room perimeter. The design philosophy focuses on creating a peaceful sleeping environment without visual distractions. The peripheral LED strip lighting is concealed within a cove, providing indirect illumination that reduces eye strain and promotes relaxation. This style is particularly popular in master bedrooms and guest rooms across Karnal, where homeowners seek a modern yet calming aesthetic. The gypsum material ensures a smooth, seamless finish that can be painted in any color to match your bedroom decor. Perfect for contemporary homes in Model Town and other residential areas, this design maximizes the sense of space while maintaining an uncluttered, serene atmosphere ideal for rest and relaxation."
-                     data-material="Gypsum"
-                     data-style="Minimalist"
-                     data-room="Bedroom"
-                     data-price="₹75-95/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/minimal-gypsum-bedroom-ceiling-peripheral-led-karnal.jpg" 
-                         alt="Minimal Gypsum False Ceiling Design for Bedroom in Karnal with Peripheral LED Lighting" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Minimal Bedroom</div>
-                            <div class="text-white/70 text-sm">Clean & Simple</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Bedroom
-                    </div>
-                </div>
-
-                <!-- Design 3 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="office"
-                     data-title="Corporate Office Ceiling"
-                     data-desc="Professional grid ceiling design with integrated lighting panels. Ideal for offices and commercial spaces."
-                     data-full-desc="This professional grid ceiling system, also known as T-bar or suspended ceiling, is specifically designed for corporate offices and commercial spaces in Karnal. The design features a metal grid framework supporting acoustic tiles that provide excellent sound absorption, creating a quieter work environment. Integrated LED lighting panels are seamlessly incorporated into the grid, providing uniform illumination throughout the workspace. This system offers easy access to electrical wiring, air conditioning ducts, and other utilities above the ceiling, making maintenance simple and cost-effective. The acoustic properties help reduce noise levels in open office layouts, improving productivity and employee comfort. Perfect for offices in Sector 15, commercial buildings, and co-working spaces across Karnal, this design combines functionality with a clean, professional appearance that reflects modern business standards."
-                     data-material="Grid System with Acoustic Tiles"
-                     data-style="Professional Grid"
-                     data-room="Office"
-                     data-price="₹65-85/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/professional-grid-office-ceiling-integrated-led-panels-karnal.jpg" 
-                         alt="Professional Grid False Ceiling Design for Office in Karnal with Integrated LED Panels" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Corporate Office</div>
-                            <div class="text-white/70 text-sm">Professional Look</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Office
-                    </div>
-                </div>
-
-                <!-- Design 4 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="living led"
-                     data-title="Coffered Ceiling Design"
-                     data-desc="Classic coffered ceiling with modern LED integration. Adds depth and character to large rooms."
-                     data-full-desc="This elegant coffered ceiling design combines classic architectural elements with modern LED technology, creating a sophisticated statement piece for large living rooms and dining areas. The coffered pattern features recessed square or rectangular panels framed by raised beams, adding architectural depth and visual interest to the space. Modern LED strip lighting is integrated within the coffer recesses, providing both ambient and accent lighting that highlights the geometric pattern. This design works exceptionally well in spacious homes with high ceilings, commonly found in premium residential areas of Karnal. The gypsum construction allows for precise detailing and crisp edges, while the design can be customized with different panel sizes and patterns to match your home's architectural style. Perfect for homeowners seeking a luxurious, timeless aesthetic that combines traditional elegance with contemporary lighting solutions."
-                     data-material="Gypsum"
-                     data-style="Coffered"
-                     data-room="Living Room"
-                     data-price="₹110-150/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/coffered-gypsum-false-ceiling-living-room-led-integration-karnal.jpg" 
-                         alt="Coffered Gypsum False Ceiling Design for Living Room in Karnal with Modern LED Integration" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Coffered Ceiling</div>
-                            <div class="text-white/70 text-sm">Classic Elegance</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Living Room
-                    </div>
-                </div>
-
-                <!-- Design 5 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="bedroom led"
+                <!-- Design Card 2: Floating Ceiling -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="bedroom modern luxury"
                      data-title="Floating Ceiling Design"
-                     data-desc="Contemporary floating ceiling with concealed LED strips. Creates a luxurious ambiance."
-                     data-full-desc="The floating ceiling design creates an illusion of a ceiling suspended in mid-air, achieved through a gap between the main ceiling and the false ceiling, with concealed LED strip lighting that creates a soft, diffused glow around the perimeter. This contemporary design is perfect for master bedrooms and luxury living spaces in modern Karnal homes, where homeowners seek a sophisticated, hotel-like ambiance. The gypsum board construction allows for precise installation with clean edges, while the concealed LED strips provide customizable lighting that can be dimmed or color-changed to match your mood. The floating effect adds a sense of spaciousness and elegance, making it particularly suitable for rooms with standard ceiling heights. This design has become increasingly popular in new residential projects across Karnal, offering a perfect blend of modern aesthetics and functional lighting."
-                     data-material="Gypsum"
+                     data-desc="Contemporary floating ceiling with concealed LED strips creating a luxurious ambiance."
+                     data-full-desc="The floating ceiling design creates an illusion of a ceiling suspended in mid-air with concealed LED strip lighting providing a soft, diffused glow. Perfect for master bedrooms seeking a sophisticated, hotel-like ambiance."
+                     data-material="Gypsum Board"
                      data-style="Floating"
                      data-room="Bedroom"
-                     data-price="₹95-125/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/floating-gypsum-bedroom-ceiling-concealed-led-strips-karnal.jpg" 
-                         alt="Floating Gypsum False Ceiling Design for Bedroom in Karnal with Concealed LED Strips" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Floating Ceiling</div>
-                            <div class="text-white/70 text-sm">Contemporary Style</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Bedroom
-                    </div>
-                </div>
-
-                <!-- Design 6 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="kitchen"
-                     data-title="Kitchen Ceiling Design"
-                     data-desc="Moisture-resistant gypsum ceiling for kitchens. Easy to clean with integrated exhaust provisions."
-                     data-full-desc="This specialized kitchen ceiling design utilizes moisture-resistant gypsum boards that can withstand the high humidity and temperature variations common in Indian kitchens. The design incorporates provisions for exhaust fans, chimney ducts, and recessed lighting, ensuring a clean, functional appearance while maintaining easy access for maintenance. The moisture-resistant properties prevent warping, mold growth, and discoloration, making it ideal for the challenging kitchen environment. The smooth gypsum finish is easy to clean and can be painted with washable paint for added protection. This design is particularly important in Karnal's climate, where kitchens experience significant humidity during monsoon season. Perfect for modern modular kitchens, this ceiling design complements contemporary kitchen aesthetics while providing practical benefits like hiding electrical wiring and creating a seamless look above your cooking area."
-                     data-material="Moisture-Resistant Gypsum"
-                     data-style="Functional Modern"
-                     data-room="Kitchen"
-                     data-price="₹80-100/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/moisture-resistant-gypsum-kitchen-ceiling-karnal.jpg" 
-                         alt="Moisture-Resistant Gypsum False Ceiling Design for Kitchen in Karnal" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Modern Kitchen</div>
-                            <div class="text-white/70 text-sm">Moisture Resistant</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Kitchen
-                    </div>
-                </div>
-
-                <!-- Design 7 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="living"
-                     data-title="Plus/Minus Design"
-                     data-desc="Popular plus-minus pattern ceiling. Budget-friendly yet stylish option for any room."
-                     data-full-desc="The plus-minus pattern ceiling is one of the most popular and budget-friendly false ceiling designs in Karnal, featuring alternating raised and recessed square panels that create a geometric grid pattern. This design adds visual interest and texture to any room without the complexity and cost of more elaborate designs. The pattern works beautifully in living rooms, bedrooms, and even small spaces, creating depth and dimension. Constructed with standard gypsum boards, this design is cost-effective while still providing all the benefits of a false ceiling, including hiding electrical wires and improving room acoustics. The pattern can be enhanced with recessed LED spotlights placed in the minus (recessed) panels, creating a dramatic lighting effect. This versatile design suits both modern and traditional home interiors, making it a favorite choice among homeowners in Karnal seeking an affordable yet stylish ceiling solution."
-                     data-material="Gypsum"
-                     data-style="Plus/Minus Pattern"
-                     data-room="Living Room"
-                     data-price="₹70-90/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/plus-minus-pattern-gypsum-false-ceiling-living-room-karnal.jpg" 
-                         alt="Plus Minus Pattern Gypsum False Ceiling Design for Living Room in Karnal" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Plus/Minus Design</div>
-                            <div class="text-white/70 text-sm">Budget Friendly</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Living Room
-                    </div>
-                </div>
-
-                <!-- Design 8 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="office led"
-                     data-title="Conference Room Ceiling"
-                     data-desc="Professional ceiling design for meeting rooms. Acoustic panels with integrated lighting."
-                     data-full-desc="This specialized conference room ceiling design combines acoustic performance with professional aesthetics, featuring acoustic gypsum panels that significantly reduce echo and background noise, ensuring clear communication during meetings. The design incorporates integrated LED panel lights that provide uniform, glare-free illumination essential for video conferences and presentations. The acoustic properties are crucial in corporate environments where sound clarity is paramount, making this design ideal for meeting rooms, boardrooms, and training facilities in Karnal's growing business district. The panels can be easily removed for access to utilities above, while the clean, professional appearance reflects corporate standards. This design is particularly effective in open office layouts where sound control is essential, helping create a productive work environment that enhances communication and reduces distractions."
-                     data-material="Acoustic Gypsum Panels"
-                     data-style="Professional Acoustic"
-                     data-room="Office"
-                     data-price="₹90-120/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/acoustic-false-ceiling-conference-room-led-panels-karnal.jpg" 
-                         alt="Acoustic False Ceiling Design for Conference Room in Karnal with Integrated LED Panels" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Conference Room</div>
-                            <div class="text-white/70 text-sm">Acoustic Design</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Office
-                    </div>
-                </div>
-
-                <!-- Design 9 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="bedroom"
-                     data-title="Kids Room Ceiling"
-                     data-desc="Fun and colorful ceiling design for children's rooms. Can include custom shapes and themes."
-                     data-full-desc="This playful kids room ceiling design transforms children's bedrooms into imaginative spaces, featuring custom shapes, patterns, and themes that spark creativity and joy. The design can incorporate stars, clouds, geometric patterns, or themed elements like cartoon characters, all crafted from gypsum boards that can be painted in vibrant, child-safe colors. Recessed LED lights can be strategically placed to create magical effects, such as starry night skies or colorful accent lighting. The design is not only visually appealing but also functional, hiding electrical wiring and providing a clean, safe environment for children. This type of ceiling design is increasingly popular in modern Karnal homes where parents want to create special spaces for their children. The gypsum construction ensures durability while allowing for creative customization that can grow with your child, making it a perfect choice for nurseries, playrooms, and children's bedrooms."
-                     data-material="Gypsum"
-                     data-style="Themed/Custom"
-                     data-room="Bedroom"
-                     data-price="₹85-110/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/custom-themed-gypsum-false-ceiling-kids-room-karnal.jpg" 
-                         alt="Custom Themed Gypsum False Ceiling Design for Kids Room in Karnal" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Kids Room</div>
-                            <div class="text-white/70 text-sm">Fun Designs</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Bedroom
-                    </div>
-                </div>
-
-                <!-- Design 10 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="living led"
-                     data-title="Cove Lighting Ceiling"
-                     data-desc="Elegant cove ceiling with concealed LED strip lighting. Creates ambient indirect lighting."
-                     data-full-desc="The cove lighting ceiling design features a recessed channel around the room perimeter where LED strip lights are concealed, creating a soft, indirect glow that washes the walls with ambient light. This elegant design eliminates harsh shadows and provides uniform, flattering illumination throughout the space. The cove is constructed with gypsum boards, creating a seamless channel that hides the LED strips while allowing the light to reflect off the walls and ceiling. This design is perfect for living rooms and dining areas in Karnal homes where homeowners seek sophisticated lighting solutions that enhance the overall ambiance. The indirect lighting reduces eye strain and creates a warm, inviting atmosphere ideal for entertaining and relaxation. The LED strips can be dimmed or color-changed, allowing you to adjust the mood of the room. This design has become increasingly popular in modern Indian homes, offering a perfect balance of aesthetics and functionality."
-                     data-material="Gypsum"
-                     data-style="Cove Lighting"
-                     data-room="Living Room"
-                     data-price="₹90-115/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/cove-lighting-gypsum-false-ceiling-living-room-concealed-led-karnal.jpg" 
-                         alt="Cove Lighting Gypsum False Ceiling Design for Living Room in Karnal with Concealed LED Strips" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Cove Lighting</div>
-                            <div class="text-white/70 text-sm">Ambient Glow</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Living Room
-                    </div>
-                </div>
-
-                <!-- Design 11 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="bedroom led"
-                     data-title="Master Bedroom Luxury"
-                     data-desc="Premium multi-layer ceiling design with chandelier point and peripheral LEDs."
-                     data-full-desc="This luxurious master bedroom ceiling design features a multi-layer gypsum construction with a central chandelier point and elegant peripheral LED cove lighting, creating a sophisticated, hotel-like ambiance. The design typically includes multiple levels or steps that add architectural depth, with a central recessed area designed to accommodate a statement chandelier or pendant light. The peripheral cove lighting provides soft, ambient illumination that complements the central fixture, while the multi-layer design creates visual interest and luxury. This premium design is perfect for master bedrooms in upscale homes across Karnal, where homeowners seek to create a retreat-like atmosphere. The gypsum construction allows for precise detailing and smooth finishes that can be painted or finished to match your bedroom decor. This design represents the pinnacle of false ceiling artistry, combining traditional elegance with modern lighting technology to create a truly luxurious bedroom environment."
-                     data-material="Gypsum"
-                     data-style="Multi-Layer Luxury"
-                     data-room="Bedroom"
-                     data-price="₹120-160/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/luxury-multi-layer-gypsum-master-bedroom-chandelier-point-karnal.jpg" 
-                         alt="Luxury Multi-Layer Gypsum False Ceiling Design for Master Bedroom in Karnal with Chandelier Point" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Master Bedroom</div>
-                            <div class="text-white/70 text-sm">Luxury Design</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Bedroom
-                    </div>
-                </div>
-
-                <!-- Design 12 -->
-                <div class="design-card group relative aspect-square rounded-xl overflow-hidden bg-gray-100 cursor-pointer"
-                     data-category="office"
-                     data-title="Open Office Ceiling"
-                     data-desc="Modern open-concept ceiling for co-working spaces. Exposed elements with strategic covering."
-                     data-full-desc="This modern open office ceiling design embraces the industrial aesthetic while maintaining functionality, featuring strategic gypsum board placement that covers essential areas while leaving structural elements exposed. This design is perfect for co-working spaces, creative offices, and modern commercial spaces in Karnal where an industrial, contemporary look is desired. The exposed elements, such as beams and ductwork, are painted in coordinating colors to create a cohesive design, while gypsum boards are used to cover areas requiring acoustic control or visual refinement. This approach is cost-effective while creating a trendy, modern workspace environment. The design allows for easy access to utilities and provides flexibility for future modifications. Perfect for startups, creative agencies, and modern businesses in Karnal's commercial areas, this ceiling design reflects contemporary office trends while maintaining practical benefits."
-                     data-material="Gypsum with Exposed Elements"
-                     data-style="Industrial Modern"
-                     data-room="Office"
-                     data-price="₹55-75/sq.ft"
-                     onclick="openLightbox(this)">
-                    <img src="images/modern-open-office-false-ceiling-industrial-aesthetic-karnal.jpg" 
-                         alt="Modern Open Office False Ceiling Design in Karnal with Industrial Aesthetic" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                         loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition">
-                        <div class="absolute bottom-0 left-0 right-0 p-4">
-                            <div class="text-white font-medium">Open Office</div>
-                            <div class="text-white/70 text-sm">Modern Workspace</div>
-                        </div>
-                    </div>
-                    <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium">
-                        Office
-                    </div>
-                </div>
-
-            </div>
-            
-            <!-- Pricing Guide Section -->
-            <section class="mt-16 mb-12">
-                <div class="max-w-4xl mx-auto bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">False Ceiling Price Guide in Karnal</h2>
-                    <p class="text-gray-600 mb-6 text-center">
-                        Get an idea of false ceiling costs. Prices vary based on design complexity, material quality, and room size.
-                    </p>
+                     data-price="₹95-125/sq.ft">
                     
-                    <div class="space-y-4 mb-6">
-                        <div class="flex justify-between items-center py-4 border-b border-gray-200">
-                            <div>
-                                <div class="font-semibold text-gray-900">Basic Gypsum Ceiling</div>
-                                <div class="text-sm text-gray-600">Simple designs, standard finish</div>
-                            </div>
-                            <div class="text-lg font-bold text-gray-900">₹75 - ₹120/sq.ft</div>
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/Luxury_Home_Interior_Design.jpg" 
+                             alt="Floating false ceiling design for bedroom with concealed LED - Karnal 2026" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Bedroom
                         </div>
-                        
-                        <div class="flex justify-between items-center py-4 border-b border-gray-200">
-                            <div>
-                                <div class="font-semibold text-gray-900">POP (Plaster of Paris) Ceiling</div>
-                                <div class="text-sm text-gray-600">Traditional designs, decorative elements</div>
-                            </div>
-                            <div class="text-lg font-bold text-gray-900">₹55 - ₹80/sq.ft</div>
-                        </div>
-                        
-                        <div class="flex justify-between items-center py-4 border-b border-gray-200">
-                            <div>
-                                <div class="font-semibold text-gray-900">Designer Ceiling with LED</div>
-                                <div class="text-sm text-gray-600">Modern designs with integrated LED lighting</div>
-                            </div>
-                            <div class="text-lg font-bold text-gray-900">₹85 - ₹150/sq.ft</div>
-                        </div>
-                        
-                        <div class="flex justify-between items-center py-4">
-                            <div>
-                                <div class="font-semibold text-gray-900">Premium/Luxury Ceiling</div>
-                                <div class="text-sm text-gray-600">Multi-layer designs, chandelier points, premium materials</div>
-                            </div>
-                            <div class="text-lg font-bold text-gray-900">₹120 - ₹160/sq.ft</div>
+                        <div class="absolute top-3 right-3 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹95-125/sq.ft
                         </div>
                     </div>
                     
-                    <div class="bg-whatsapp/10 rounded-lg p-4 mb-6">
-                        <p class="text-sm text-gray-700">
-                            <strong>Note:</strong> Prices are approximate starting ranges and may vary based on design complexity, material quality (branded vs local), room size, location within Karnal, and additional features like acoustic panels or special finishes. We provide detailed quotes after a free site visit.
-                        </p>
-                    </div>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="false-ceiling-karnal.html" 
-                           class="inline-flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full font-medium transition">
-                            View Service Details
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                        </a>
-                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20need%20a%20quote%20for%20false%20ceiling%20in%20Karnal." 
-                           class="inline-flex items-center justify-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white px-6 py-3 rounded-full font-medium transition">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                            Get Free Quote
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Floating Ceiling Design</h3>
+                        <p class="text-sm text-gray-600 mb-4">Suspended look with ambient edge lighting</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20Floating%20Ceiling%20design.%20Please%20share%20the%20price%20for%20my%20bedroom." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
                         </a>
                     </div>
                 </div>
-            </section>
-            
-            <!-- Load More -->
-            <div class="text-center mt-12">
-                <p class="text-gray-500 mb-4">Can't find what you're looking for?</p>
-                <a href="https://wa.me/919355510817?text=Hi%2C%20I%20have%20a%20specific%20ceiling%20design%20in%20mind.%20Can%20you%20help%3F" 
-                   class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-full font-medium transition">
-                    Share Your Design Idea
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Related Services Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Services</h2>
-            <p class="text-gray-600 mb-10 text-center max-w-2xl mx-auto">
-                Explore our comprehensive false ceiling and gypsum work services. From design to installation, we handle everything.
-            </p>
-            
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <a href="false-ceiling-karnal.html" class="group bg-white rounded-xl p-6 hover:shadow-lg transition border border-gray-200">
-                    <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                <!-- Design Card 3: Geometric Pattern -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="living modern"
+                     data-title="Geometric Pattern Ceiling"
+                     data-desc="Contemporary geometric design with clean lines and modern aesthetic."
+                     data-full-desc="This geometric pattern ceiling uses angular shapes and clean lines to create visual interest. The design works well in contemporary homes and can be enhanced with strategic lighting."
+                     data-material="Gypsum Board"
+                     data-style="Geometric"
+                     data-room="Living Room"
+                     data-price="₹90-115/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/UGluOjkzMTQ3MTEzNTQ0NDc0ODI0Nw==.jpg" 
+                             alt="Geometric pattern false ceiling design for living room - Karnal 2026" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Living Room
+                        </div>
+                        <div class="absolute top-3 right-3 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹90-115/sq.ft
+                        </div>
                     </div>
-                    <h3 class="font-semibold text-gray-900 mb-2 group-hover:text-whatsapp transition">False Ceiling</h3>
-                    <p class="text-sm text-gray-600 mb-3">Modern gypsum & POP ceilings with LED lighting. Perfect for living rooms, bedrooms, and offices.</p>
-                    <span class="text-sm text-whatsapp font-medium inline-flex items-center gap-1">
-                        Learn More
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </span>
-                </a>
-                
-                <a href="pop-ceiling-karnal.html" class="group bg-white rounded-xl p-6 hover:shadow-lg transition border border-gray-200">
-                    <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Geometric Pattern Ceiling</h3>
+                        <p class="text-sm text-gray-600 mb-4">Angular shapes with modern aesthetic</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20Geometric%20Pattern%20Ceiling.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
                     </div>
-                    <h3 class="font-semibold text-gray-900 mb-2 group-hover:text-whatsapp transition">POP Ceiling</h3>
-                    <p class="text-sm text-gray-600 mb-3">Traditional Plaster of Paris ceilings with intricate designs and decorative elements.</p>
-                    <span class="text-sm text-whatsapp font-medium inline-flex items-center gap-1">
-                        Learn More
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </span>
-                </a>
-                
-                <a href="gypsum-partition-karnal.html" class="group bg-white rounded-xl p-6 hover:shadow-lg transition border border-gray-200">
-                    <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                    </div>
-                    <h3 class="font-semibold text-gray-900 mb-2 group-hover:text-whatsapp transition">Gypsum Partition</h3>
-                    <p class="text-sm text-gray-600 mb-3">Office partitions, room dividers, and sound-proof walls for commercial and residential spaces.</p>
-                    <span class="text-sm text-whatsapp font-medium inline-flex items-center gap-1">
-                        Learn More
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </span>
-                </a>
-                
-                <a href="wall-paneling-karnal.html" class="group bg-white rounded-xl p-6 hover:shadow-lg transition border border-gray-200">
-                    <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"/></svg>
-                    </div>
-                    <h3 class="font-semibold text-gray-900 mb-2 group-hover:text-whatsapp transition">Wall Paneling</h3>
-                    <p class="text-sm text-gray-600 mb-3">MDF, PVC, and wooden wall panels for accent walls and modern interior design.</p>
-                    <span class="text-sm text-whatsapp font-medium inline-flex items-center gap-1">
-                        Learn More
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </section>
+                </div>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox fixed inset-0 bg-black/95 z-50 items-center justify-center p-4">
-        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white/80 hover:text-white">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
-        
-        <div class="max-w-4xl w-full grid md:grid-cols-2 gap-6 items-center">
-            <div class="aspect-square rounded-xl overflow-hidden bg-gray-900">
-                <img id="lightbox-img" src="" alt="" class="w-full h-full object-cover">
             </div>
-            <div class="text-white">
-                <h3 id="lightbox-title" class="text-2xl font-bold mb-3"></h3>
-                <div id="lightbox-meta" class="flex flex-wrap gap-3 mb-4 text-sm">
-                    <span id="lightbox-material" class="bg-white/20 px-3 py-1 rounded-full"></span>
-                    <span id="lightbox-style" class="bg-white/20 px-3 py-1 rounded-full"></span>
-                    <span id="lightbox-room" class="bg-white/20 px-3 py-1 rounded-full"></span>
-                </div>
-                <p id="lightbox-desc" class="text-gray-300 mb-6 leading-relaxed text-base"></p>
-                <div class="mb-6">
-                    <div class="text-sm text-gray-500 mb-1">Estimated Price</div>
-                    <div id="lightbox-price" class="text-xl font-semibold text-whatsapp"></div>
-                </div>
-                <a id="lightbox-cta" href="" 
+            
+            <!-- Section CTA -->
+            <div class="bg-gradient-to-r from-gray-50 to-cream rounded-2xl p-6 md:p-8 text-center">
+                <p class="text-gray-700 mb-4">Confused about which design suits your home?</p>
+                <a href="https://wa.me/919355510817?text=Hi%2C%20I%20need%20help%20choosing%20a%20modern%20ceiling%20design%20for%20my%20home%20in%20Karnal.%20Can%20you%20suggest%20some%20options%3F" 
                    class="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white px-6 py-3 rounded-full font-medium transition">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    Get This Design
+                    Get Free Design Suggestion (No Spam)
                 </a>
+                <p class="text-xs text-gray-500 mt-3">Directly talk to the owner • Family business</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-950 text-gray-400 py-12">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <a href="/" class="inline-flex items-center gap-2 mb-4">
-                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                    <span class="text-gray-900 font-bold text-lg">D</span>
+    <!-- ============================================
+         SECTION 2: SIMPLE LIVING ROOM DESIGNS
+         ============================================ -->
+    <section class="py-12 bg-warm-gray" id="living-room">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="max-w-3xl mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    Simple False Ceiling Designs for Living Room
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Your living room is where you spend time with family and welcome guests. A <strong>simple false ceiling design</strong> can transform this space without overwhelming it. We recommend clean tray designs or peripheral cove lighting for most Karnal homes.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Simple doesn't mean boring — it means elegant. These designs start from just <strong>₹75/sq.ft</strong> and look beautiful for years.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                
+                <!-- Simple Living Room Design 1 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="living budget"
+                     data-title="Simple Peripheral Ceiling"
+                     data-desc="Clean peripheral design with cove lighting for a subtle, elegant look."
+                     data-material="Gypsum Board"
+                     data-style="Peripheral"
+                     data-room="Living Room"
+                     data-price="₹75-95/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/term_image_home_decor_ideas_living_room_modern_interior_design_-_free_ideas_for_beginners.jpg" 
+                             alt="Simple peripheral false ceiling design for living room - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Living Room
+                        </div>
+                        <div class="absolute top-3 right-3 bg-green-600/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹75-95/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Simple Peripheral Ceiling</h3>
+                        <p class="text-sm text-gray-600 mb-4">Clean edges with subtle cove lighting</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20Simple%20Peripheral%20Ceiling%20for%20my%20living%20room.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
                 </div>
-                <span class="font-semibold text-white">Design & Decor</span>
-            </a>
-            <p class="text-sm mb-4">Expert false ceiling and gypsum work in Karnal & Delhi NCR</p>
-            <p class="text-sm">&copy; 2026 Design & Decor. All rights reserved.</p>
+
+                <!-- Simple Living Room Design 2 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="living budget"
+                     data-title="L-Shaped Corner Design"
+                     data-desc="Elegant L-shaped design perfect for corners and small living rooms."
+                     data-material="Gypsum Board"
+                     data-style="L-Shape"
+                     data-room="Living Room"
+                     data-price="₹70-90/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/Transform_Your_Space_Elegant_&_Budget-Friendly_Home_Decor_Ideas_.jpg" 
+                             alt="L-shaped false ceiling design for small living room - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Living Room
+                        </div>
+                        <div class="absolute top-3 right-3 bg-green-600/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹70-90/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">L-Shaped Corner Design</h3>
+                        <p class="text-sm text-gray-600 mb-4">Perfect for compact living rooms</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20L-Shaped%20Corner%20Ceiling%20design.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simple Living Room Design 3 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="living"
+                     data-title="Center Panel Design"
+                     data-desc="Classic center panel with recessed lights for balanced lighting."
+                     data-material="Gypsum Board"
+                     data-style="Center Panel"
+                     data-room="Living Room"
+                     data-price="₹80-100/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/UGluOjkzMTQ3MTEzNTQ0NDc0ODI0OQ==.jpg" 
+                             alt="Center panel false ceiling design for living room - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Living Room
+                        </div>
+                        <div class="absolute top-3 right-3 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹80-100/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Center Panel Design</h3>
+                        <p class="text-sm text-gray-600 mb-4">Balanced lighting with recessed spots</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20Center%20Panel%20Ceiling%20design.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: BEDROOM FALSE CEILING DESIGNS
+         ============================================ -->
+    <section class="py-12 bg-white" id="bedroom">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="max-w-3xl mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    Bedroom False Ceiling Designs
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Your bedroom should feel like a peaceful retreat. The right <strong>bedroom false ceiling design</strong> creates a cozy atmosphere with soft lighting that helps you relax. We recommend warm LED tones and minimal designs for master bedrooms.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    From simple peripheral designs to luxury multi-layer ceilings with chandelier points — we've got options for every budget and taste.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                
+                <!-- Bedroom Design 1 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="bedroom"
+                     data-title="Minimal Bedroom Ceiling"
+                     data-desc="Clean minimal design with peripheral lighting for a calm atmosphere."
+                     data-material="Gypsum Board"
+                     data-style="Minimalist"
+                     data-room="Bedroom"
+                     data-price="₹75-95/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/Plasterboard_Led_Profile.jpg" 
+                             alt="Minimal false ceiling design for bedroom with LED profile - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Bedroom
+                        </div>
+                        <div class="absolute top-3 right-3 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹75-95/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Minimal Bedroom Ceiling</h3>
+                        <p class="text-sm text-gray-600 mb-4">Clean lines with soft cove lighting</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20Minimal%20Bedroom%20Ceiling%20design.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bedroom Design 2 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="bedroom luxury"
+                     data-title="Master Bedroom Luxury"
+                     data-desc="Premium multi-layer design with chandelier point and peripheral LEDs."
+                     data-material="Gypsum Board"
+                     data-style="Multi-Layer"
+                     data-room="Master Bedroom"
+                     data-price="₹120-160/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/UGluOjkzMTQ3MTEzNTQ0NDc0ODI1Mg==.png" 
+                             alt="Luxury multi-layer false ceiling for master bedroom - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Master Bedroom
+                        </div>
+                        <div class="absolute top-3 right-3 bg-purple-600/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹120-160/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Master Bedroom Luxury</h3>
+                        <p class="text-sm text-gray-600 mb-4">Multi-layer with chandelier point</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20Master%20Bedroom%20Luxury%20Ceiling%20design.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bedroom Design 3 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="bedroom"
+                     data-title="Kids Room Creative"
+                     data-desc="Fun ceiling design for children's rooms with colorful lighting options."
+                     data-material="Gypsum Board"
+                     data-style="Creative"
+                     data-room="Kids Room"
+                     data-price="₹85-110/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-modern-bedroom-2026/Interactive_Wall_Art_for_Entertainment_Spaces.jpg" 
+                             alt="Creative false ceiling design for kids room - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Kids Room
+                        </div>
+                        <div class="absolute top-3 right-3 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹85-110/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Kids Room Creative</h3>
+                        <p class="text-sm text-gray-600 mb-4">Fun designs with colorful lighting</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20Kids%20Room%20Creative%20Ceiling%20design.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: OFFICE CEILING DESIGNS
+         ============================================ -->
+    <section class="py-12 bg-warm-gray" id="office">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="max-w-3xl mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    Office False Ceiling Designs
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    A professional office ceiling improves both appearance and productivity. <strong>Grid ceilings with acoustic panels</strong> reduce noise, while integrated LED panels provide uniform lighting that's easy on the eyes during long work hours.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    We serve offices, co-working spaces, clinics, and showrooms across Karnal and NCR. Easy maintenance and professional finish guaranteed.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                
+                <!-- Office Design 1 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="office"
+                     data-title="Corporate Grid Ceiling"
+                     data-desc="Professional grid ceiling with integrated LED panels for offices."
+                     data-material="Grid System"
+                     data-style="Grid"
+                     data-room="Office"
+                     data-price="₹65-85/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-office-2026/Office_Ceiling_Maker_in_Dubai_050-9221195.jpg" 
+                             alt="Corporate grid false ceiling for office - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Office
+                        </div>
+                        <div class="absolute top-3 right-3 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹65-85/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Corporate Grid Ceiling</h3>
+                        <p class="text-sm text-gray-600 mb-4">Professional look with integrated lighting</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20need%20a%20Corporate%20Grid%20Ceiling%20for%20my%20office.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Office Design 2 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="office"
+                     data-title="Conference Room Acoustic"
+                     data-desc="Acoustic panels for meeting rooms with sound control."
+                     data-material="Acoustic Panels"
+                     data-style="Acoustic Grid"
+                     data-room="Conference Room"
+                     data-price="₹90-120/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-office-2026/Conference_Room_Design.jpg" 
+                             alt="Acoustic false ceiling for conference room - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Conference Room
+                        </div>
+                        <div class="absolute top-3 right-3 bg-gray-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹90-120/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Conference Room Acoustic</h3>
+                        <p class="text-sm text-gray-600 mb-4">Sound-absorbing panels for meetings</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20need%20an%20Acoustic%20Ceiling%20for%20my%20conference%20room.%20Please%20share%20details." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Office Design 3 -->
+                <div class="design-card group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                     data-category="office modern"
+                     data-title="Modern Open Office"
+                     data-desc="Contemporary ceiling for co-working and startup spaces."
+                     data-material="Gypsum + Metal"
+                     data-style="Industrial Modern"
+                     data-room="Co-working Space"
+                     data-price="₹55-75/sq.ft">
+                    
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="images/images/false-ceiling-latest-office-2026/200_Mary_Level_16_Speculative_Suite_-_Archway.jpg" 
+                             alt="Modern open office false ceiling - Karnal" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                             loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                            Co-working
+                        </div>
+                        <div class="absolute top-3 right-3 bg-green-600/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-white">
+                            ₹55-75/sq.ft
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="font-semibold text-gray-900 mb-1">Modern Open Office</h3>
+                        <p class="text-sm text-gray-600 mb-4">Industrial look for startups</p>
+                        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20need%20a%20Modern%20Open%20Office%20Ceiling.%20Please%20share%20the%20price." 
+                           class="flex items-center justify-center gap-2 w-full bg-whatsapp/10 hover:bg-whatsapp hover:text-white text-whatsapp-dark py-2.5 rounded-xl text-sm font-medium transition">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Ask Price on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHY TRUST US SECTION - Local Family Business
+         ============================================ -->
+    <section class="py-16 bg-gray-900 text-white" id="trust">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Why Karnal Families Trust Us</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    We're not a big company — we're a family business that treats every project like our own home.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-whatsapp/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-whatsapp" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Family-Run Business</h3>
+                    <p class="text-gray-400 text-sm">Not a franchise. You talk directly to the owner who oversees your project personally.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-whatsapp/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-whatsapp" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Local Workers Only</h3>
+                    <p class="text-gray-400 text-sm">Our team is from Karnal. No outsourced labor — we know our people and their work.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-whatsapp/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-whatsapp" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Transparent Pricing</h3>
+                    <p class="text-gray-400 text-sm">No hidden charges. We give you a detailed written quote before starting any work.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-whatsapp/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-whatsapp" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Post-Installation Support</h3>
+                    <p class="text-gray-400 text-sm">We don't disappear after the job. Call us anytime for touch-ups or maintenance.</p>
+                </div>
+            </div>
+            
+            <!-- Testimonial Style Quote -->
+            <div class="max-w-3xl mx-auto bg-white/5 rounded-2xl p-8 text-center">
+                <p class="text-lg text-gray-300 mb-4 italic">
+                    "They came to our home in Model Town, understood what we wanted, and delivered exactly that. No drama, no surprise charges. Just honest work. That's rare these days."
+                </p>
+                <p class="text-whatsapp font-medium">— A happy family from Model Town, Karnal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PRICING GUIDE SECTION
+         ============================================ -->
+    <section class="py-16 bg-white" id="pricing">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">False Ceiling Price Guide (Karnal 2026)</h2>
+                <p class="text-gray-600">Transparent pricing — no hidden charges. Get exact quote after free site visit.</p>
+            </div>
+            
+            <div class="bg-warm-gray rounded-2xl p-6 md:p-8">
+                <div class="space-y-4 mb-8">
+                    
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200 bg-white rounded-xl px-4">
+                        <div>
+                            <div class="font-semibold text-gray-900">Budget-Friendly (POP)</div>
+                            <div class="text-sm text-gray-600">Simple designs, traditional finish</div>
+                        </div>
+                        <div class="text-lg font-bold text-green-600">₹55-80/sq.ft</div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200 bg-white rounded-xl px-4">
+                        <div>
+                            <div class="font-semibold text-gray-900">Standard Gypsum</div>
+                            <div class="text-sm text-gray-600">Clean designs with basic LED</div>
+                        </div>
+                        <div class="text-lg font-bold text-gray-900">₹75-100/sq.ft</div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center py-4 border-b border-gray-200 bg-white rounded-xl px-4">
+                        <div>
+                            <div class="font-semibold text-gray-900">Designer with LED</div>
+                            <div class="text-sm text-gray-600">Modern designs, cove lighting</div>
+                        </div>
+                        <div class="text-lg font-bold text-gray-900">₹85-130/sq.ft</div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center py-4 bg-white rounded-xl px-4">
+                        <div>
+                            <div class="font-semibold text-gray-900">Luxury Multi-Layer</div>
+                            <div class="text-sm text-gray-600">Premium finish, chandelier points</div>
+                        </div>
+                        <div class="text-lg font-bold text-purple-600">₹120-160/sq.ft</div>
+                    </div>
+                </div>
+                
+                <div class="bg-whatsapp/10 rounded-xl p-4 mb-6">
+                    <p class="text-sm text-gray-700">
+                        <strong>Note:</strong> Prices include material + labor + basic LED. Actual cost depends on design complexity, room size, and location. We provide a detailed written quote after a free site visit.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <a href="https://wa.me/919355510817?text=Hi%2C%20I%20need%20a%20price%20quote%20for%20false%20ceiling.%20Please%20arrange%20a%20free%20site%20visit." 
+                       class="inline-flex items-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white px-8 py-4 rounded-full font-semibold transition shadow-lg">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Get Free Quote on WhatsApp
+                    </a>
+                    <p class="text-xs text-gray-500 mt-3">Free site visit • No obligation • Response within 1 hour</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="bg-gray-950 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                            <span class="text-gray-900 font-bold text-lg">D</span>
+                        </div>
+                        <span class="font-semibold text-white">Design & Decor</span>
+                    </div>
+                    <p class="text-sm mb-4">Family-run false ceiling business serving Karnal & NCR since 2014. Trusted by 500+ families.</p>
+                    <p class="text-sm">Karnal, Haryana 132001</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="false-ceiling-karnal.html" class="hover:text-white transition">False Ceiling Services</a></li>
+                        <li><a href="pop-ceiling-karnal.html" class="hover:text-white transition">POP Ceiling</a></li>
+                        <li><a href="gypsum-partition-karnal.html" class="hover:text-white transition">Gypsum Partition</a></li>
+                        <li><a href="designs.html" class="hover:text-white transition">Design Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="tel:+919355510817" class="hover:text-white transition flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                                +91 93555 10817
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/919355510817" class="hover:text-white transition flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 Design & Decor. Family-run business in Karnal. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Sticky Bottom Bar (Mobile) -->
+    <!-- ============================================
+         FLOATING WHATSAPP BUTTON - Always Visible
+         ============================================ -->
+    <a href="https://wa.me/919355510817?text=Hi%2C%20I%20saw%20your%20false%20ceiling%20designs%20online.%0AI%20want%20a%20free%20consultation%20for%20my%20home%20in%20Karnal." 
+       class="fixed bottom-20 md:bottom-6 right-4 md:right-6 z-50 pulse-ring"
+       aria-label="Chat on WhatsApp">
+        <div class="bg-whatsapp hover:bg-whatsapp-dark text-white p-4 rounded-full shadow-2xl transition flex items-center gap-2">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span class="hidden md:inline font-medium pr-1">Free Consultation</span>
+        </div>
+    </a>
+
+    <!-- ============================================
+         STICKY BOTTOM BAR - Mobile Only
+         ============================================ -->
     <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 flex gap-3 md:hidden z-40">
         <a href="tel:+919355510817" 
            class="flex-1 flex items-center justify-center gap-2 bg-gray-900 text-white py-3 rounded-xl font-medium">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-            Call
+            Call Now
         </a>
-        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20saw%20designs%20on%20your%20website.%20Please%20share%20details." 
+        <a href="https://wa.me/919355510817?text=Hi%2C%20I%20saw%20your%20false%20ceiling%20designs%20online.%0AI%20want%20a%20free%20consultation%20for%20my%20home%20in%20Karnal." 
            class="flex-1 flex items-center justify-center gap-2 bg-whatsapp text-white py-3 rounded-xl font-medium">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             WhatsApp
         </a>
     </div>
 
+    <!-- ============================================
+         JAVASCRIPT - Filter & Interactions
+         ============================================ -->
     <script>
         // Filter functionality
         const filterBtns = document.querySelectorAll('.filter-btn');
@@ -767,123 +1064,18 @@
                 });
             });
         });
-        
-        // Lightbox functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxTitle = document.getElementById('lightbox-title');
-        const lightboxDesc = document.getElementById('lightbox-desc');
-        const lightboxPrice = document.getElementById('lightbox-price');
-        const lightboxCta = document.getElementById('lightbox-cta');
-        
-        function openLightbox(card) {
-            const img = card.querySelector('img');
-            const title = card.dataset.title;
-            const desc = card.dataset.fullDesc || card.dataset.desc;
-            const price = card.dataset.price;
-            const material = card.dataset.material || '';
-            const style = card.dataset.style || '';
-            const room = card.dataset.room || '';
-            
-            lightboxImg.src = img.src;
-            lightboxImg.alt = img.alt;
-            lightboxTitle.textContent = title;
-            lightboxDesc.textContent = desc;
-            lightboxPrice.textContent = price;
-            
-            // Update meta tags
-            const materialEl = document.getElementById('lightbox-material');
-            const styleEl = document.getElementById('lightbox-style');
-            const roomEl = document.getElementById('lightbox-room');
-            
-            if (materialEl) materialEl.textContent = material || '';
-            if (styleEl) styleEl.textContent = style || '';
-            if (roomEl) roomEl.textContent = room || '';
-            
-            // Hide meta tags if empty
-            if (!material) materialEl.style.display = 'none';
-            if (!style) styleEl.style.display = 'none';
-            if (!room) roomEl.style.display = 'none';
-            
-            lightboxCta.href = `https://wa.me/919355510817?text=Hi%2C%20I%20like%20the%20${encodeURIComponent(title)}%20design.%20Please%20share%20quote.`;
-            
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-        
-        // Close on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeLightbox();
-        });
-        
-        // Close on background click
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) closeLightbox();
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
         });
     </script>
 
-    <!-- Image Fallback Handler -->
-    <script>
-        // Handle image fallbacks for missing local images
-        // This works even when browsers cache 404 responses
-        (function() {
-            const imageFallbacks = {
-                'close-up-modern-gypsum-false-ceiling-led-strip-lights-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80&fit=crop',
-                'living-room-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
-                'bedroom-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
-                'office-false-ceiling-design.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
-                'modern-gypsum-false-ceiling-project-living-room-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
-                'office-false-ceiling.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80',
-                'bedroom-ceiling-design.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80',
-                'false-ceiling-project-assandh.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
-                'false-ceiling-project-panipat.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
-                'false-ceiling-project-kurukshetra.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
-                'modern-gypsum-false-ceiling-living-room-led-lighting-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
-                'minimal-gypsum-bedroom-ceiling-peripheral-led-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
-                'professional-grid-office-ceiling-integrated-led-panels-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
-                'coffered-gypsum-false-ceiling-living-room-led-integration-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
-                'floating-gypsum-bedroom-ceiling-concealed-led-strips-karnal.jpg': 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80',
-                'moisture-resistant-gypsum-kitchen-ceiling-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
-                'plus-minus-pattern-gypsum-false-ceiling-living-room-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
-                'acoustic-false-ceiling-conference-room-led-panels-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
-                'custom-themed-gypsum-false-ceiling-kids-room-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
-                'cove-lighting-gypsum-false-ceiling-living-room-concealed-led-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
-                'luxury-multi-layer-gypsum-master-bedroom-chandelier-point-karnal.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&q=80',
-                'modern-open-office-false-ceiling-industrial-aesthetic-karnal.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
-                'acoustic-grid-false-ceiling-project-office-delhi.jpg': 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80',
-                'luxury-multi-layer-false-ceiling-master-bedroom-gurgaon.jpg': 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=600&q=80'
-            };
-            
-            function getFallbackUrl(imgSrc) {
-                const filename = imgSrc.split('/').pop();
-                return imageFallbacks[filename] || 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80';
-            }
-            
-            // Check all images and add fallback handlers
-            document.querySelectorAll('img[src*="images/"]').forEach(img => {
-                const originalSrc = img.src;
-                const fallbackUrl = getFallbackUrl(originalSrc);
-                
-                // Enhanced onerror handler
-                img.onerror = function() {
-                    if (this.src !== fallbackUrl) {
-                        this.src = fallbackUrl;
-                    }
-                };
-                
-                // Also check if image loaded successfully after a short delay
-                setTimeout(() => {
-                    if (!img.complete || img.naturalHeight === 0) {
-                        img.src = fallbackUrl;
-                    }
-                }, 100);
-            });
-        })();
-    </script>
 </body>
 </html>
