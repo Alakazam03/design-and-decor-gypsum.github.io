@@ -137,4 +137,60 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    
+    <!-- New Haryana City Pages -->
+    <url>
+        <loc>https://karnallocal.in/kaithal/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://karnallocal.in/jind/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://karnallocal.in/sonipat/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://karnallocal.in/rohtak/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://karnallocal.in/yamunanagar/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://karnallocal.in/hisar/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://karnallocal.in/nilokheri/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://karnallocal.in/gharaunda/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://karnallocal.in/taraori/</loc>
+        <lastmod>2026-02-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
